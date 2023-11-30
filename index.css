@@ -1,0 +1,462 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*start*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+/*color*/
+.bg-primary {
+  background-color: #ffb800;
+}
+.bg-copyright {
+  background-color: rgba(255, 184, 0, 0.1);
+}
+.bg-aboutus {
+  background-color: rgba(255, 214, 133, 0.1);
+}
+
+/*版面*/
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+.text-btn {
+  width: 79px;
+  height: 27px;
+  border-radius: 73px;
+  border: 1px solid #ffb800;
+  background-color: #fff;
+}
+.text-btn p {
+  color: #ffb800;
+}
+/*文字*/
+.font-s {
+  font-size: 14px;
+  font-weight: bold;
+}
+.font-m {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 33px;
+}
+.font-b {
+  font-size: 21px;
+}
+h2 {
+  font-size: 32px;
+  font-weight: Bold;
+  text-align: center;
+}
+h3 {
+  font-size: 21px;
+  font-weight: Bold;
+}
+.bold-text {
+  font-weight: Bold;
+}
+.center-text {
+  text-align: center;
+}
+/*flex*/
+.d-flex {
+  display: flex;
+}
+.jc-c {
+  justify-content: center;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+.jc-sa {
+  justify-content: space-around;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.ai-c {
+  align-items: center;
+}
+.fd-c {
+  flex-direction: column;
+}
+/*header*/
+.header img {
+  width: 128px;
+}
+.p-header {
+  padding-top: 13.7px;
+  padding-bottom: 12.72px;
+}
+.p-header-ul {
+  padding-top: 3.3px;
+  padding-bottom: 8.28px;
+}
+.mr-51 {
+  margin-right: 51px;
+}
+.mr-47 {
+  margin-right: 47px;
+}
+/*搜尋列表*/
+.bg-cover {
+  background-image: url(/images/cover.png);
+}
+.pt-211 {
+  padding-top: 211px;
+}
+.pb-342 {
+  padding-bottom: 342px;
+}
+.search-input {
+  width: 640px;
+  height: 42px;
+  border: 2px solid #b3b3b3;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #b3b3b3;
+  padding-left: 40px; /* 調整左邊的內邊距，以容納圖片 */
+  background-image: url("/images/magnifier.png"); /* 替換為您想要使用的圖片的路徑 */
+  background-size: 16px; /* 設定圖片大小 */
+  background-repeat: no-repeat; /* 防止圖片重複 */
+  background-position: 15px center; /* 設定圖片位置 */
+  margin-bottom: 14px;
+}
+.container-search {
+  margin: 0 auto;
+  max-width: 640px;
+}
+.w-477 {
+  width: 477px;
+}
+.mb-21 {
+  margin-bottom: 21px;
+}
+/*下拉選單*/
+.menu-container {
+  position: relative;
+  display: inline-block;
+}
+#menu {
+  display: none; /* 初始状态设置为隐藏 */
+  position: absolute;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: 1140px;
+  background-color: #fff;
+  padding-top: 26px;
+  padding-bottom: 17px;
+  padding-left: 26px;
+  padding-right: 34px;
+  border-radius: 8px;
+}
+button {
+  width: 20px;
+  height: 18.87px;
+  background-image: url("/images/btn.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+.w-190 {
+  width: 190px;
+}
+.w-390 {
+  width: 390px;
+}
+.mr-40 {
+  margin-right: 40px;
+}
+.menu p {
+  color: #b3b3b3;
+  margin-bottom: 3px;
+}
+.list li {
+  width: 90px;
+  height: 24px;
+  border: 1px solid #ffb800;
+  background-color: #fff;
+  border-radius: 73px;
+  text-align: center;
+  color: #ffb800;
+  margin-bottom: 10px;
+}
+/*熱們字型*/
+.box-size {
+  width: 360px;
+  height: 329px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+}
+.mb-55 {
+  margin-bottom: 55px;
+}
+.mb-62 {
+  margin-bottom: 62px;
+}
+.pt-70 {
+  padding-top: 70px;
+}
+.pb-107 {
+  padding-bottom: 107px;
+}
+.pl-15 {
+  padding-left: 15px;
+}
+.pr-14 {
+  padding-right: 14px;
+}
+.box-size img {
+  height: 202.5px;
+  width: 360px;
+  margin-bottom: 16.5px;
+}
+.box-size h3 {
+  margin-bottom: 15px;
+}
+.divider {
+  border: none;
+  height: 1px;
+  background-color: #b3b3b3;
+  margin-bottom: 15px;
+}
+/*版權知識*/
+.w-332 {
+  width: 332px;
+}
+.pt-72 {
+  padding-top: 72px;
+}
+.pb-155 {
+  padding-bottom: 155px;
+}
+.circle {
+  width: 246px;
+  height: 246px;
+  background-color: rgba(255, 184, 0, 0.2);
+  border-radius: 50%;
+}
+.mb-14 {
+  margin-bottom: 14px;
+}
+.mb-74 {
+  margin-bottom: 74px;
+}
+/*其他精選資源*/
+.pt-59 {
+  padding-top: 59px;
+}
+.pb-61 {
+  padding-bottom: 61px;
+}
+.resource {
+  width: 360px;
+  height: 360px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+}
+.resource img {
+  height: 270px;
+  width: 360px;
+  margin-bottom: 13.5px;
+}
+.resource h3,
+.resource p {
+  margin-left: 15px;
+}
+.resource h3 {
+  margin-bottom: 6px;
+}
+.mb-53 {
+  margin-bottom: 53px;
+}
+.mb-46 {
+  margin-bottom: 46px;
+}
+.more-btn {
+  width: 151px;
+  height: 42px;
+  border-radius: 80px;
+  border: 1px solid #ffb800;
+}
+.more-btn p {
+  color: #ffb800;
+}
+/*關於我們*/
+.pt-69 {
+  padding-top: 69px;
+}
+.pb-8 {
+  padding-bottom: 8px;
+}
+.aboutus img {
+  width: 556px;
+  margin-right: 38px;
+}
+.aboutus text {
+  width: 547px;
+}
+.aboutus {
+  padding-top: 74px;
+  padding-bottom: 153.25px;
+}
+/*footer*/
+.p-footer {
+  padding-top: 49px;
+  padding-bottom: 49px;
+  align-items: flex-end;
+}
+.w-117 {
+  width: 117px;
+}
