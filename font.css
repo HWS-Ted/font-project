@@ -276,10 +276,11 @@ h3 {
 }
 
 .fa-notdef {
+  /* 豆腐字 */
   padding: 2px;
 }
 
-button {
+.a-button {
   display: block;
   margin: 0 auto;
   margin-top: 50px;
@@ -291,6 +292,7 @@ button {
   height: 42px;
   font-size: 14px;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .fontTable {
