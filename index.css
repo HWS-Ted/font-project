@@ -470,3 +470,13 @@ h3 {
   background-color: #ffb800;
   color: white;
 }
+
+/* 搜尋結果頁面 */
+.card-panel {
+  /* height: 2000px; */
+  /* margin-top: 105px; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 360px;
+  gap: 40px 30px;
+}
