@@ -208,6 +208,7 @@ main {
 }
 
 .three-copyright .click {
+  padding-bottom: 10px;
   border-bottom: 3px solid #ffb800;
 }
 
@@ -283,4 +284,13 @@ footer {
 
 .fa-brands {
   color: black;
+}
+
+/* hover設定 */
+.text-hover:hover {
+  color: white;
+}
+.btn-hover:hover {
+  background-color: #ffb800;
+  color: white;
 }

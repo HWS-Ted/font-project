@@ -141,7 +141,7 @@ a {
 
 html,
 body {
-  font-family: "Lato", "Noto Sans TC", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   box-sizing: border-box;
 }
 
@@ -300,4 +300,13 @@ footer {
 
 .fa-brands {
   color: black;
+}
+
+/* hover設定 */
+.text-hover:hover {
+  color: white;
+}
+.btn-hover:hover {
+  background-color: #ffb800;
+  color: white;
 }

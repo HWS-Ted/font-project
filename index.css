@@ -152,6 +152,7 @@ a {
   text-decoration: none;
   color: #000;
 }
+
 /*color*/
 .bg-primary {
   background-color: #ffb800;
@@ -174,10 +175,9 @@ a {
   border-radius: 73px;
   border: 1px solid #ffb800;
   background-color: #fff;
-}
-.text-btn p {
   color: #ffb800;
 }
+
 /*文字*/
 .font-s {
   font-size: 14px;
@@ -248,7 +248,7 @@ h3 {
 }
 /*搜尋列表*/
 .bg-cover {
-  background-image: url(/images/cover.png);
+  background-image: url("./images/cover.png");
 }
 .pt-211 {
   padding-top: 211px;
@@ -264,7 +264,7 @@ h3 {
   font-size: 14px;
   color: #b3b3b3;
   padding-left: 40px; /* 調整左邊的內邊距，以容納圖片 */
-  background-image: url("/images/magnifier.png"); /* 替換為您想要使用的圖片的路徑 */
+  background-image: url("./images/magnifier.png"); /* 替換為您想要使用的圖片的路徑 */
   background-size: 16px; /* 設定圖片大小 */
   background-repeat: no-repeat; /* 防止圖片重複 */
   background-position: 15px center; /* 設定圖片位置 */
@@ -299,16 +299,15 @@ h3 {
   padding-right: 34px;
   border-radius: 8px;
 }
-button {
-  width: 20px;
-  height: 18.87px;
-  background-image: url("/images/btn.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
+#menu-arrow {
   cursor: pointer;
+  color: #b3b3b3;
 }
+
+#menu-arrow:hover {
+  color: #ffb800;
+}
+
 .w-190 {
   width: 190px;
 }
@@ -429,10 +428,9 @@ button {
   height: 42px;
   border-radius: 80px;
   border: 1px solid #ffb800;
-}
-.more-btn p {
   color: #ffb800;
 }
+
 /*關於我們*/
 .pt-69 {
   padding-top: 69px;
@@ -457,6 +455,18 @@ button {
   padding-bottom: 49px;
   align-items: flex-end;
 }
+.w-80 {
+  width: 80px;
+}
 .w-117 {
   width: 117px;
+}
+
+/* hover設定 */
+.text-hover:hover {
+  color: white;
+}
+.btn-hover:hover {
+  background-color: #ffb800;
+  color: white;
 }
