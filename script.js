@@ -10,11 +10,16 @@ function fetchData() {
       // 下面為須取得資料後才能進行的事
       // 或是利用 index 與 font 畫面切換時，會重新讀取此.js檔
       // 放入希望瀏覽器在畫面切換後，進行判斷的事
-      if (location.pathname === "/font.html") {
+      if (location.pathname.includes("font.html")) {
         let id = getId();
         renderIntro(id);
       }
-      if (location.pathname === "/index.html" && location.hash !== "") {
+      if (
+        location.pathname.includes("/index.html") ||
+        (location.pathname.includes("/font-project") &&
+          !location.pathname.includes("/font.html") &&
+          location.hash !== "")
+      ) {
         let hash = location.hash;
         let decodedString = decodeURIComponent(hash.slice(1));
         searchInput.value = decodedString;
@@ -229,7 +234,11 @@ function renderIntro(id) {
 
 // 在 index.html 的畫面時,才進行的監聽
 // 避免 font.html 執行時產生錯誤
-if (location.pathname === "/index.html") {
+if (
+  location.pathname.includes("/index.html") ||
+  (location.pathname.includes("/font-project") &&
+    !location.pathname.includes("/font.html"))
+) {
   // 監聽"輸入"事件發生時，渲染搜尋結果畫面
   searchInput.addEventListener("input", searchPanel);
 
