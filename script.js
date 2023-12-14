@@ -91,7 +91,7 @@ function renderCard(data) {
     cardHTML += `
     <div class="box-size over-hide">
             <a href="./font.html#${obj["id"]}">
-            <div class="imgplace "><img src="${obj["img"]}" alt="" /></div></a>
+            <div class="imgplace "><img src="${obj["img_url"]}" alt="" /></div></a>
             <div class="pl-15 pr-14">
               <a href="./font.html#${obj["id"]}">
               <h3>${obj["name"]}</h3></a>
@@ -180,7 +180,7 @@ function renderIntro(id) {
           <a href="./index.html">首頁</a> > <a href="./font.html#${font.id}">${font.name}</a>
         </div>
         <h1 class="fontTitle">${font.name}</h1>
-        <img src="${font.img}" alt="" class="fontImg" />
+        <img src="${font["img_url"]}" alt="" class="fontImg" />
         <div class="table-section">
           <h3>關於字型</h3>
           <div class="table">
@@ -235,7 +235,7 @@ function renderIntro(id) {
 // 在 index.html 的畫面時,才進行的監聽
 // 避免 font.html 執行時產生錯誤
 if (
-  location.pathname.includes("/index.html") ||
+  location.pathname.includes("/") ||
   (location.pathname.includes("/font-project") &&
     !location.pathname.includes("/font.html"))
 ) {
