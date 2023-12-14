@@ -142,6 +142,43 @@ body {
   margin: 0 auto;
 }
 
+header {
+  background: #ffb800;
+  box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  font-family: "Lato", "Noto Sans TC", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  height: 67px;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+  line-height: 16px;
+  box-sizing: content-box;
+}
+
+img.logo {
+  width: 128px;
+  display: inline;
+}
+
+ul.title-page {
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+}
+
+li a.nav-link {
+  display: block;
+  width: 84px;
+  color: black;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 29px;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -512,4 +549,3 @@ h3.no-data {
 .over-hide {
   overflow: hidden;
 }
-

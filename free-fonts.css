@@ -159,7 +159,7 @@ nav {
   align-items: center;
 }
 
-.logo {
+img.logo {
   width: 128px;
 }
 
@@ -169,7 +169,7 @@ ul.title-page {
   justify-content: space-between;
 }
 
-li a {
+li a.nav-link {
   display: block;
   width: 84px;
   color: black;
